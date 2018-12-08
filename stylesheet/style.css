@@ -1,0 +1,50 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+.logo1 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 1.0rem;
+}
+
+.navbar {
+  padding: .5rem 0rem;
+}
+
+.navbar-collapse {
+  height: 0.625rem;
+  padding-top: 0.625rem;
+}
+
+.p-152 {
+  width: 152px;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+}
+
+@media (min-width: 0px) and (max-width: 1000px) {
+   .collapse {
+       display: none !important;
+   }
+   .p-152 {
+       width: 16px;
+     }
+}
+/*@media (max-width: 768px) {
+  .navbar-brand {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      text-align: center;
+      margin: auto;
+  }
+
+  @media (max-width: 768px) {
+    .navbar-brand img{
+        width: 10%;
+    }*/

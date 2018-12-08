@@ -1,0 +1,59 @@
+.uxuianimation {
+  position: absolute;
+  left: 30%;
+  font-weight: 700;
+  font-size: 300px;
+  -webkit-animation-name: example;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: both; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  transform: rotate(90deg);
+  z-index: -1;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {top: 800px;}
+  to {top: 270px;}
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes example {
+  from {top: 800px;}
+  to {top: 270px;}
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (min-width: 635px) and (max-width: 825px) {
+  .uxuianimation {
+    left: 10%;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 635px) {
+  .uxuianimation {
+    left: 30%;
+    font-weight: 700;
+    font-size: 200px;
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+    from {top: 270px;}
+    to {top: 230px;}
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes example {
+    from {top: 270px;}
+    to {top: 230px;}
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+}
